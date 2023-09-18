@@ -24,7 +24,7 @@ model Restaurant {
   location_id Int
   location Location @relation(fields: [location_id], references: [id])
   cuisine_id Int
-  cusine Cuisine @relation(fields: [cuisine_id], references: [id])
+  cuisine Cuisine @relation(fields: [cuisine_id], references: [id])
   created_at DateTime @default(now())
   updated_at DateTime @updatedAt
 }
